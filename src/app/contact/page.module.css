@@ -1,0 +1,242 @@
+.container {
+  width: 100%;
+  background-color: #fff9f3;
+  border: none;
+}
+.box1 {
+  width: 100%;
+  padding: 4% 10% 6% 10%;
+  background-color: #ffc692;
+  color: black;
+}
+.head1 {
+  font-size: 2.5vw;
+  text-align: left;
+  font-weight: 600;
+  margin: 0 0 2% 0;
+}
+.desc1 {
+  font-size: 1.3vw;
+  text-align: left;
+  font-weight: 400;
+  width: 80%;
+  line-height: 2vw;
+}
+.box2 {
+  background-color: #ffe7d1;
+  margin: -4% 10% 0 10%;
+  padding: 4% 4%;
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  color: black;
+  border-radius: 25px;
+}
+.col1 {
+  width: 45%;
+  margin: 0 2% 2% 0;
+}
+.col2 {
+  width: 45%;
+  padding: 0 0% 0 0;
+}
+.head2 {
+  font-size: 2.5vw;
+  font-weight: 500;
+  color: black;
+  margin: 2% 0 0 0;
+}
+.head3 {
+  font-size: 1vw;
+  font-weight: 500;
+  color: black;
+  margin: 2% 0 0 0;
+  width: 90%;
+}
+.name {
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: rgb(49, 49, 49);
+  border: solid 1px rgb(182, 182, 182);
+  border-radius: 15px;
+  padding: 0.8vw 1vw;
+  width: 90%;
+  background-color: #fff9f3;
+  margin: 6% 0 0 0;
+}
+.name2 {
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: rgb(49, 49, 49);
+  border: solid 1px rgb(182, 182, 182);
+  border-radius: 15px;
+  padding: 0.8vw 1vw;
+  width: 90%;
+  background-color: #fff9f3;
+  margin: 4% 0 0 0;
+}
+.send {
+  font-size: 1vw;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 0.8vw 1vw;
+  width: 90%;
+  background-color: #fe6712;
+  margin: 4% 0 0 0;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}
+.row3 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 2vw;
+  margin: 5% 0 0 0;
+}
+.col31 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 24%;
+  justify-content: center;
+  align-items: center;
+}
+.col311 {
+  width: 30%;
+}
+.col312 {
+  width: 70%;
+}
+.row311 {
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+.row312 {
+  font-size: 0.8vw;
+  color: #dd5471;
+}
+
+@media screen and (max-width: 464px) {
+  .box1 {
+    width: 100%;
+    padding: 25% 10% 6% 10%;
+    background-color: #ffc692;
+    color: black;
+  }
+  .head1 {
+    font-size: 5vw;
+    text-align: left;
+    font-weight: 600;
+    margin: 0 0 5% 0;
+  }
+  .desc1 {
+    font-size: 3vw;
+    text-align: left;
+    font-weight: 400;
+    width: 90%;
+    line-height: 3.5vw;
+  }
+  .box2 {
+    background-color: #ffe7d1;
+    margin: -4% 5% 0 5%;
+    padding: 4% 4%;
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap-reverse;
+    color: black;
+    border-radius: 25px;
+  }
+  .col1 {
+    width: 100%;
+    margin: 0 2% 2% 0;
+  }
+  .col2 {
+    width: 100%;
+    padding: 0 0% 0 0;
+  }
+
+  .head2 {
+    font-size: 5vw;
+    font-weight: 500;
+    color: black;
+    margin: 10% 0 0 0;
+  }
+  .head3 {
+    font-size: 3vw;
+    font-weight: 500;
+    color: black;
+    margin: 2% 0 0 0;
+    width: 90%;
+  }
+  .name {
+    font-size: 3vw;
+    font-weight: 400;
+    color: rgb(49, 49, 49);
+    border: solid 1px rgb(182, 182, 182);
+    border-radius: 10px;
+    padding: 2vw 2vw;
+    width: 100%;
+    background-color: #fff9f3;
+    margin: 6% 0 0 0;
+  }
+  .name2 {
+    font-size: 3vw;
+    font-weight: 400;
+    color: rgb(49, 49, 49);
+    border: solid 1px rgb(182, 182, 182);
+    border-radius: 10px;
+    padding: 2vw 2vw;
+    width: 100%;
+    background-color: #fff9f3;
+    margin: 4% 0 0 0;
+  }
+  .send {
+    font-size: 3vw;
+    font-weight: 500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 2vw 2vw;
+    width: 100%;
+    background-color: #fe6712;
+    margin: 4% 0 0 0;
+  }
+
+  .row3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 2vw;
+    margin: 5% 0 0 0;
+  }
+  .col31 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+  .col311 {
+    width: 40%;
+  }
+  .col312 {
+    width: 60%;
+  }
+  .row311 {
+    font-size: 2vw;
+    font-weight: 500;
+  }
+  .row312 {
+    font-size: 2vw;
+    color: #dd5471;
+  }
+}

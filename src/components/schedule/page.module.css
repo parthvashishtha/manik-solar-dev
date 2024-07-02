@@ -1,0 +1,358 @@
+.container {
+  width: 100%;
+}
+.head {
+  width: 80%;
+  color: #fe6712;
+  font-size: 3.2vw;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 10% 0 10%;
+}
+
+.box {
+  width: 94%;
+  margin: 2% 0 2% 6%;
+  display: flex;
+  flex-direction: row;
+}
+.col1 {
+  width: 45%;
+  padding: 3% 4%;
+  margin: 2% 0;
+  background-color: #ffe6cf;
+  border-radius: 25px;
+}
+.label {
+  color: #333;
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin: 0% 0 2% 0;
+}
+.name {
+  padding: 3% 1.5%;
+  color: rgb(51, 51, 51);
+  background-color: white;
+  border: solid 1px rgb(167, 167, 167);
+  margin: 0 0 4% 0;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.3vw;
+}
+
+.pincity {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+.pin {
+  width: 48%;
+}
+.city {
+  width: 48%;
+}
+.ipin {
+  padding: 5% 1.5%;
+  color: rgb(51, 51, 51);
+  background-color: white;
+  border: solid 1px rgb(167, 167, 167);
+  margin: 0 0 4% 0;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.3vw;
+}
+.col2 {
+  width: 55%;
+}
+.solar {
+  width: 80%;
+  height: auto;
+  float: right;
+  margin: -30% 0 0 0;
+}
+.submit {
+  background-color: #fe6712;
+  font-weight: 600;
+  color: white;
+  font-size: 1.3vw;
+  text-align: center;
+  padding: 1vw 4vw;
+  border: none;
+  border-radius: 10px;
+  margin: 5% 0 2% 0;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #ff965a;
+}
+.vector2 {
+  margin: 3% 0 -2% 15%;
+  width: 20vw;
+}
+.feature {
+  margin: 3% 10% 1% 10%;
+  width: 80%;
+  border-radius: 20px;
+}
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 10% 3% 10%;
+  width: 88%;
+  gap: 2%;
+}
+.card {
+  width: 21%;
+  border-radius: 25px;
+  gap: 3%;
+  margin: 0 0 2% 0;
+  background-color: white;
+}
+.f1 {
+  border-radius: 25px;
+  width: 100%;
+}
+.cardHead {
+  font-size: 1.3vw;
+  text-align: center;
+  font-weight: 600;
+  color: #fe6712;
+  margin: 5% 0 5% 0;
+}
+.cardDesc {
+  font-size: 1vw;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  padding: 1% 2.5%;
+  margin: 3% 0 5% 0;
+  line-height: 1.8vw;
+}
+.vector3 {
+  margin: -6% 0 -2% 65%;
+  width: 20vw;
+}
+.benefits {
+  width: 100%;
+  margin: 5% 0 0% 0;
+}
+.mbenefits {
+  display: none;
+}
+.benefits2 {
+  width: 95%;
+  margin: 0% 4% 3% 4%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+.ben1 {
+  width: 22%;
+  padding: 0 3% 3% 3%;
+}
+.bhead {
+  font-size: 1.3vw;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+  margin: 5% 0 5% 0;
+}
+.bdesc {
+  font-size: 1vw;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  padding: 1% 2.5%;
+  margin: 3% 0 5% 0;
+  line-height: 1.5vw;
+}
+.vector4 {
+  margin: -3% 0 -7% 64vw;
+  width: 20vw;
+}
+.pdesc {
+  width: 50%;
+  color: black;
+  font-size: 1.2vw;
+  text-align: center;
+  font-weight: 400;
+  margin: 2% 25% 0% 25%;
+  line-height: 2vw;
+}
+.portfolio {
+  margin: 0% 10% 1% 10%;
+  width: 80%;
+  border-radius: 20px;
+}
+.msolar {
+  display: none;
+}
+@media screen and (max-width: 1800px) {
+  .vector2 {
+    margin: 3% 0 -2% 10%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .vector2 {
+    margin: 3% 0 -2% 10%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .vector2 {
+    margin: 3% 0 -2% 5%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .vector2 {
+    margin: 3% 0 -2% 3%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .head {
+    width: 80%;
+    color: #fe6712;
+    font-size: 4.8vw;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 10% 0 10%;
+  }
+  .box {
+    width: 94%;
+    margin: 2% 2% 2% 2%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .col1 {
+    width: 100%;
+    padding: 3% 4%;
+    margin: 2% 0;
+    background-color: #ffe6cf;
+    border-radius: 25px;
+  }
+  .col2 {
+    width: 100%;
+  }
+  .solar {
+    display: none;
+  }
+  .msolar {
+    display: block;
+    width: 95%;
+  }
+  .label {
+    color: #333;
+    font-size: 3vw;
+    font-weight: 500;
+    margin: 0% 0 2% 0;
+  }
+  .name {
+    padding: 3% 1.5%;
+    color: rgb(51, 51, 51);
+    background-color: white;
+    border: solid 1px rgb(167, 167, 167);
+    margin: 0 0 4% 0;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 3vw;
+  }
+
+  .pincity {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+  }
+  .pin {
+    width: 48%;
+  }
+  .city {
+    width: 48%;
+  }
+  .ipin {
+    padding: 5% 1.5%;
+    color: rgb(51, 51, 51);
+    background-color: white;
+    border: solid 1px rgb(167, 167, 167);
+    margin: 0 0 4% 0;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 3.5vw;
+  }
+  .submit {
+    background-color: #fe6712;
+    font-weight: 500;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    padding: 1.5vw 10vw;
+    border: none;
+    border-radius: 5px;
+    margin: 5% 0 2% 0;
+    cursor: pointer;
+  }
+  .feature {
+    margin: 3% 5% 1% 5%;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6% 5% 3% 5%;
+    width: 90%;
+    gap: 2%;
+  }
+  .card {
+    width: 48%;
+    border-radius: 25px;
+    gap: 3%;
+    margin: 0 0 2% 0;
+    background-color: white;
+  }
+  .f1 {
+    border-radius: 25px;
+    width: 100%;
+  }
+  .cardHead {
+    font-size: 4.5vw;
+    text-align: center;
+    font-weight: 600;
+    color: #fe6712;
+    margin: 5% 0 5% 0;
+  }
+  .cardDesc {
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+    padding: 1% 2.5%;
+    margin: 5% 0 5% 0;
+    line-height: 4vw;
+  }
+  .benefits {
+    display: none;
+  }
+  .mbenefits {
+    display: block;
+    width: 90vw;
+    margin: 5vw 5vw 5vw 5vw;
+  }
+  .benefits2 {
+    display: none;
+  }
+  .vector4 {
+    margin: -3% 0 -8% 65vw;
+    width: 22vw;
+  }
+  .pdesc {
+    font-size: 3vw;
+    width: 85vw;
+    line-height: 3.6vw;
+    margin: 2vw 7.5vw 3vw 7.5vw;
+  }
+  .portfolio {
+    margin: 0% 5% 1% 5%;
+    width: 90vw;
+    border-radius: 20px;
+  }
+}

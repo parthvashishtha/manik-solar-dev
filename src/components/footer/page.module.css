@@ -1,0 +1,108 @@
+.container {
+  width: 100%;
+  background-color: #fff9f3;
+  padding-top: 2%;
+  position: relative;
+}
+.footbg {
+  position: relative;
+  width: 100%;
+}
+.row1 {
+  position: absolute;
+  top: 25vw;
+  padding: 0% 6% 0 6%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col1 {
+  width: 21vw;
+  color: white;
+}
+.head1 {
+  color: #39ec2a;
+  font-size: 2.2vw;
+}
+.desc2 {
+  font-size: 0.8vw;
+  color: white;
+  margin: 0 0 2vw 0;
+}
+.desc1 {
+  font-size: 1vw;
+  color: white;
+  line-height: 1.5vw;
+}
+.head2 {
+  color: white;
+  font-size: 1.8vw;
+  margin: 0 0 1vw 0;
+}
+.desc3 {
+  font-size: 1vw;
+  color: white;
+  margin: 0 0 0.8vw 0;
+}
+.newsInput {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.inp {
+  width: 80%;
+  background-color: white;
+  padding: 1vw 1vw;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  color: black;
+}
+.emailBtn {
+  width: 10%;
+  background-color: #39ec2a;
+  padding: 1vw 2vw;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+.location {
+  position: absolute;
+  top: 40vw;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+}
+.cities {
+  position: absolute;
+  top: 40vw;
+  width: 70%;
+  margin: 4% 15% 4% 15%;
+  text-align: center;
+  color: white;
+  font-size: 1.3vw;
+  line-height: 2vw;
+}
+@media screen and (max-width: 464px) {
+  .row1 {
+    display: none;
+  }
+  .location {
+    position: absolute;
+    top: 25vw;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3.5vw;
+  }
+  .cities {
+    position: absolute;
+    top: 30vw;
+    width: 80%;
+    margin: 1% 10% 4% 10%;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+}

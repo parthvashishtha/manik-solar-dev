@@ -1,0 +1,246 @@
+.strategy {
+  width: 100%;
+  background-color: #fff;
+  color: #585858;
+  /* padding-bottom: 3vw; */
+  padding: 2% 2%;
+}
+.form {
+  /* padding:3vw 0; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.formHeading {
+  font-size: 2vw;
+  justify-self: center;
+  color: #585858;
+}
+.homeForm {
+  align-items: center;
+  background-color: #fff;
+  padding: 1vw 4vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.HomeFormTitle {
+  font-size: 1.2vw;
+  padding-bottom: 0.25vw;
+  color: #585858;
+}
+.inputline {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1vw;
+  width: 47%;
+}
+
+.inputDiv1 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1vw;
+  width: 97%;
+}
+.inputPlace {
+  background-color: #fff;
+  border-radius: 5px;
+  border-width: 1px;
+  height: 2.5vw;
+  width: 100%;
+  color: black;
+  font-size: 1.2vw;
+  padding-left: 0.5vw;
+}
+.inputPlace1 {
+  background-color: #fff;
+  border-radius: 5px;
+  border-width: 1px;
+  min-height: 7vw;
+  width: 100%;
+  color: black;
+  font-size: 1.2vw;
+  padding: 0.5vw;
+  resize: vertical;
+}
+
+.buttonForm:hover {
+  cursor: pointer;
+}
+.buttonForm {
+  width: 25vw;
+  height: 2.5vw;
+  margin-top: 2vw;
+  background-color: #315471;
+  font-size: 1.25vw;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* home */
+.home {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 2% 5%;
+  justify-content: space-between;
+}
+.homeImg {
+  width: 40%;
+  display: block;
+}
+
+.homeData {
+  flex-direction: column;
+  width: 45%;
+  align-content: flex-start;
+  justify-content: center;
+  display: flex;
+  gap: 1vw;
+}
+.homeHeading {
+  position: absolute;
+  top: 15%;
+  font-size: 38px;
+  margin-bottom: 2vw;
+  color: #333;
+}
+.homePara {
+  font-size: 20px;
+  text-align: left;
+}
+
+/* cards */
+.cardDiv {
+  display: flex;
+  justify-content: center;
+  padding: 1vw 3vw;
+  gap: 1.5vw;
+}
+.cardData {
+  width: 30vw;
+  background-color: #315471;
+  color: aliceblue;
+  padding: 2vw 2vw;
+  border-radius: 2.5vw;
+}
+.cardHead {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 8%;
+}
+.cardPara {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 2.5%;
+}
+
+/* mobile */
+
+@media (width<=464px) {
+  .strategy {
+    padding: 2% 6%;
+  }
+  .inputline {
+    flex-direction: column;
+  }
+  .formHeading {
+    font-size: 6vw;
+  }
+  .inputDiv {
+    width: 100%;
+    padding-bottom: 2vw;
+  }
+  .HomeFormTitle {
+    font-size: 3.5vw;
+    padding-bottom: 0.8vw;
+  }
+  .buttonForm {
+    width: 100%;
+    height: 6.5vw;
+    font-size: 3.5vw;
+  }
+  .inputDiv1 {
+    width: 100%;
+  }
+  .inputPlace {
+    background-color: #fff;
+    border-radius: 5px;
+    border-width: 1px;
+    height: 7.5vw;
+    color: black;
+    font-size: 3.5vw;
+    padding-left: 3%;
+  }
+  .inputPlace1 {
+    background-color: #fff;
+    border-radius: 5px;
+    border-width: 1px;
+    min-height: 16vw;
+    width: 100%;
+    color: black;
+    font-size: 3.5vw;
+    padding: 3%;
+  }
+
+  /* strategy mob */
+
+  .home {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2.5vw 3.5vw;
+    padding-bottom: 10%;
+  }
+
+  .homeData {
+    flex-direction: column;
+    width: 100vw;
+    padding: 2% 3%;
+  }
+  .homeForm {
+    padding-bottom: 4%;
+  }
+  .homeImg {
+    display: block;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 11%;
+  }
+  .homeHeading {
+    top: 2%;
+    font-size: 6vw;
+    left: 32%;
+    text-align: center;
+  }
+  .homePara {
+    font-size: 4.25vw;
+    text-align: center;
+    padding: 2% 6%;
+  }
+  /* cards */
+
+  .cardDiv {
+    flex-direction: column;
+    width: 100%;
+    gap: 8vw;
+    padding-bottom: 10%;
+  }
+  .cardData {
+    width: 100%;
+    padding: 4% 5%;
+  }
+  .cardHead {
+    font-size: 6vw;
+    font-weight: 700;
+  }
+  .cardPara {
+    font-size: 4.5vw;
+  }
+}

@@ -1,0 +1,114 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+.bg1 {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.mbg1 {
+  display: none;
+}
+.head1 {
+  position: absolute;
+  width: 75%;
+  top: 10vw;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 2.8vw;
+  font-weight: 500;
+}
+.head2 {
+  position: absolute;
+  width: 60%;
+  top: 18vw;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 3vw;
+  font-weight: 500;
+  line-height: 4.5vw;
+}
+.lady {
+  width: 5vw;
+  height: auto;
+}
+
+.orangeText {
+  color: #fe6712;
+}
+.get {
+  position: absolute;
+  height: auto;
+  width: 14%;
+  top: 30vw;
+  left: 10%;
+  z-index: 1;
+}
+.camel {
+  position: absolute;
+  height: auto;
+  width: 16%;
+  top: 33vw;
+  right: 10%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 464px) {
+  .bg1 {
+    display: none;
+  }
+  .mbg1 {
+    display: block;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding: 5vw 0 35vw 0;
+  }
+  .head1 {
+    position: absolute;
+    width: 75%;
+    top: 20vw;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 4vw;
+    font-weight: 500;
+  }
+  .head2 {
+    position: absolute;
+    width: 60%;
+    top: 40vw;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 6vw;
+  }
+  .get {
+    position: absolute;
+    height: auto;
+    width: 25%;
+    top: 85vw;
+    left: 38%;
+    z-index: 1;
+  }
+  .lady {
+    width: 10vw;
+    height: auto;
+  }
+  .camel {
+    position: absolute;
+    height: auto;
+    width: 16%;
+    top: 95vw;
+    left: 42%;
+    z-index: 1;
+  }
+}
