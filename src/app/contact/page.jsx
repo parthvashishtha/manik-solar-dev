@@ -61,7 +61,7 @@ function Contact() {
           {!english &&
             `हमारे विशेषज्ञ आपकी सहायता के लिए हमेशा तैयार हैं! यदि आपके पास कोई प्रश्न है या आप हमारे सोलर पैनल सेवाओं के बारे में अधिक जानकारी चाहते हैं, तो कृपया हमसे संपर्क करें:`}
           {english &&
-            `At Rays Rooftop, Our experts are always ready to assist you! If you
+            `At Seon, Our experts are always ready to assist you! If you
           have any questions or would like more information about our solar
           panel services, please contact us.`}
         </div>
@@ -98,7 +98,11 @@ function Contact() {
               onChange={handleChange}
               type="email"
               className={styles.name2}
-              placeholder={english ? "Enter Email Address" : `ईमेल पता`}
+              placeholder={
+                english
+                  ? "Enter Email Address(Optional)"
+                  : `ईमेल पता (वैकल्पिक)`
+              }
               required
             />
             <input
@@ -106,7 +110,7 @@ function Contact() {
               name="contact"
               value={formData.contact}
               onChange={handleChange}
-              type="number"
+              type="text"
               className={styles.name2}
               placeholder={english ? "Enter Phone No." : `फोन नंबर`}
               required
@@ -140,11 +144,11 @@ function Contact() {
               </div>
               <div className={styles.col312}>
                 <div className={styles.row311}>PHONE</div>
-                <div className={styles.row312}>03 5432 1234</div>
+                <div className={styles.row312}>+91 8069859743</div>
               </div>
             </div>
 
-            <div className={styles.col31}>
+            {/* <div className={styles.col31}>
               <div className={styles.col311}>
                 <img
                   src="/assets/about/fax.png"
@@ -156,7 +160,7 @@ function Contact() {
                 <div className={styles.row311}>FAX</div>
                 <div className={styles.row312}>03 5432 1234</div>
               </div>
-            </div>
+            </div> */}
 
             <div className={styles.col31}>
               <div className={styles.col311}>
@@ -168,7 +172,7 @@ function Contact() {
               </div>
               <div className={styles.col312}>
                 <div className={styles.row311}>EMAIL</div>
-                <div className={styles.row312}>info@marcc.com</div>
+                <div className={styles.row312}>support@raysresidential.in</div>
               </div>
             </div>
           </div>

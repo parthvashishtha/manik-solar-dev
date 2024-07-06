@@ -67,10 +67,11 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+
       <div className={styles.navStyle}>
         <div className={styles.itm1}>
           <img src="/assets/call.png" alt="icon" className={styles.callIcon} />
-          +91 123 456 7890
+          +91 8069859743
         </div>
         <Link className={styles.lin} href="/contact">
           <img
@@ -141,6 +142,9 @@ const Navbar = () => {
 
       {openLine && (
         <div className={styles.divsec}>
+          <div className={styles.cross} onClick={() => setOpenLine(false)}>
+            X
+          </div>
           <Link
             className={styles.lin}
             href="/"

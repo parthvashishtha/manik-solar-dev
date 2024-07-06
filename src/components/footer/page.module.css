@@ -4,6 +4,9 @@
   padding-top: 2%;
   position: relative;
 }
+.mnews {
+  display: none;
+}
 .footbg {
   position: relative;
   width: 100%;
@@ -83,13 +86,16 @@
   font-size: 1.3vw;
   line-height: 2vw;
 }
+.mnews {
+  display: none;
+}
 @media screen and (max-width: 464px) {
   .row1 {
     display: none;
   }
   .location {
     position: absolute;
-    top: 25vw;
+    top: 35vw;
     width: 100%;
     text-align: center;
     color: white;
@@ -97,12 +103,38 @@
   }
   .cities {
     position: absolute;
-    top: 30vw;
-    width: 80%;
-    margin: 1% 10% 4% 10%;
+    top: 40vw;
+    width: 90%;
+    margin: 1% 5% 4% 5%;
     text-align: center;
     color: white;
     font-size: 2vw;
     line-height: 3vw;
+  }
+  .mnews {
+    display: block;
+    position: absolute;
+    top: 13vw;
+    margin: 2% 5%;
+    text-align: center;
+    align-items: center;
+  }
+  .head2 {
+    /* position: absolute;
+    top: 20vw; */
+    color: white;
+    font-size: 4vw;
+    margin: 0 0 1vw 0;
+  }
+  .desc3 {
+    font-size: 2vw;
+    color: white;
+    margin: 0 0 0.8vw 0;
+    width: 70%;
+  }
+  .newsInput {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
   }
 }

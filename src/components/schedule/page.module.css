@@ -1,6 +1,12 @@
 .container {
   width: 100%;
 }
+
+/* input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+} */
+
 .head {
   width: 80%;
   color: #fe6712;
@@ -39,7 +45,6 @@
   border-radius: 10px;
   font-size: 1.3vw;
 }
-
 .pincity {
   display: flex;
   flex-direction: row;
@@ -52,7 +57,7 @@
   width: 48%;
 }
 .ipin {
-  padding: 5% 1.5%;
+  padding: 5% 4%;
   color: rgb(51, 51, 51);
   background-color: white;
   border: solid 1px rgb(167, 167, 167);

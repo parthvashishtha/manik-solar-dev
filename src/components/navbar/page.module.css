@@ -76,8 +76,8 @@
   align-items: center;
 }
 .navBtn {
-  width: auto;
-  height: 60%;
+  width: 90%;
+  height: auto;
 }
 .engBtn {
   width: 7vw;
@@ -86,11 +86,18 @@
   z-index: 5;
 }
 .callIcon {
+  width: auto;
+  height: 100%;
 }
 .meng {
   display: none;
 }
-
+@media screen and (max-width: 1650px) {
+  .navBtn {
+    width: 70%;
+    height: auto;
+  }
+}
 @media screen and (max-width: 1350px) {
   .container {
     display: flex;
@@ -103,13 +110,158 @@
     position: relative;
     padding: 0 0 0 6vw;
   }
+  .navBtn {
+    width: 60%;
+    height: auto;
+    margin: 0 0 0 15%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .container {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    height: 5vw;
+    position: relative;
+    padding: 0 0 0 6vw;
+  }
+
+  .navStyle {
+    display: flex;
+    gap: 0.5vw;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+  }
+
+  .navBtn {
+    width: 60%;
+    height: auto;
+    margin: 0 0 0 15%;
+  }
+  .section {
+    /* background-color: blue; */
+    font-size: 1.2vw;
+    font-weight: 500;
+  }
+  .callIcon {
+    width: auto;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .container {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+    height: 5vw;
+    position: relative;
+    padding: 0 0 0 6vw;
+  }
+  .navBtn {
+    width: 50%;
+    height: auto;
+    margin: 0 0 0 25%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .logo {
+    display: none;
+  }
+
+  .container {
+    gap: 68%;
+    height: 0vw;
+    padding-top: 0vw;
+    padding-bottom: 0vw;
+    background-color: #fff9f3;
+  }
+
+  .leftside {
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section {
+    display: none;
+  }
+  .sectionm {
+    display: block;
+    width: 100%;
+    font-size: 2vw;
+    opacity: 100%;
+    text-align: center;
+    color: black;
+    margin: 2% 0;
+    padding: 0 0 2% 0;
+    border-bottom: solid 1px rgb(114, 114, 114);
+  }
+  .divsec {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    width: 100%;
+    opacity: 95%;
+    background-color: #ff9a93;
+    color: Black;
+    z-index: 5;
+    padding: 4% 10% 2% 10%;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    z-index: 2;
+    height: 12vw;
+    width: 12vw;
+  }
+  .cross {
+    position: absolute;
+    top: 4vw;
+    right: 4vw;
+    font-size: 2.5vw;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  .navStyle {
+    display: none;
+  }
+  .meng {
+    display: block;
+    position: absolute;
+    top: 3vw;
+    right: 3vw;
+    z-index: 2;
+    height: 12vw;
+    width: 12vw;
+  }
 }
 
 @media screen and (max-width: 464px) {
   .logo {
     display: none;
   }
-
+  .cross {
+    position: absolute;
+    top: 4vw;
+    right: 4vw;
+    font-size: 4vw;
+  }
   .container {
     gap: 68%;
     height: 0vw;
