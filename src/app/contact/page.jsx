@@ -53,7 +53,7 @@ function Contact() {
     <div className={styles.container}>
       <div className={styles.box1}>
         <div className={styles.head1}>
-          {!english && `संपर्क कर`}
+          {!english && `संपर्क करें`}
           {english && `Contact Us!`}
           📞ें
         </div>
