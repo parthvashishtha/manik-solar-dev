@@ -33,7 +33,7 @@ function HeroAbout() {
           `ग्रामीण इलाकों में बिजली की कमी एक बड़ी समस्या है। स्योन का उद्देश्य है कि हर घर को ऊर्जा की सुविधा मिले और वे भी बिजली के फायदे उठा सकें। हम सौर ऊर्जा के माध्यम से यह सुनिश्चित करते हैं कि गांवों में रहने वाले लोगों को निरंतर और विश्वसनीय बिजली मिले`}
         {english &&
           `Lack of electricity is a big problem in rural areas. The objective of
-        RAISE is that every household should have access to energy and they too
+        Seon is that every household should have access to energy and they too
         can avail the benefits of electricity. Through solar energy we ensure
         that people living in villages get continuous and reliable electricity.
         People living in villages should get continuous and reliable
@@ -58,7 +58,7 @@ function HeroAbout() {
           {!english &&
             "स्योन के साथ, हम लगातार ऊर्जा के क्षेत्र में नई ऊंचाइयों को छू रहे हैं और ग्रामीण क्षेत्रों को ऊर्जा आत्मनिर्भर बनाने में योगदान दे रहे हैं।"}
           {english &&
-            `With RAISE, we are continuously scaling new heights in the energy
+            `With Seon, we are continuously scaling new heights in the energy
           sector and contributing to making rural areas energy self-reliant.`}
         </div>
         <div className={styles.col2}>
@@ -99,7 +99,7 @@ function HeroAbout() {
           {!english &&
             "स्योन का मिशन है कि हम ग्रामीण भारत को स्वच्छ, सस्ती और सुलभ सौर ऊर्जा प्रदान करके ऊर्जा आत्मनिर्भर बनाएं। हमारा उद्देश्य न केवल ऊर्जा की समस्याओं को हल करना है, बल्कि पर्यावरण को संरक्षित रखना और सामाजिक विकास में योगदान देना भी है।"}
           {english &&
-            `RAISE's mission is to make rural India energy self-reliant by
+            `Seon's mission is to make rural India energy self-reliant by
           providing clean, affordable and accessible solar energy. Our objective
           is not only to solve energy problems, but also to preserve the
           environment and contribute to social development.`}
@@ -125,7 +125,7 @@ function HeroAbout() {
             {!english &&
               "स्योन उच्च गुणवत्ता वाले सोलर पैनल प्रदान करता है जो ग्रामीण क्षेत्रों के लिए विशेष रूप से डिजाइन किए गए हैं। 🌞🏆"}
             {english &&
-              `Rays provides high-quality solar panels specially designed for rural
+              `Seon provides high-quality solar panels specially designed for rural
             areas. 🌞🏆`}
           </div>
         </div>
@@ -171,7 +171,7 @@ function HeroAbout() {
             {!english &&
               `स्योन का लक्ष्य है कि हम अपने प्रयासों के माध्यम से ग्रामीण भारत को ऊर्जा आत्मनिर्भर बनाएं। हमारी प्रतिबद्धता है कि हम अपने ग्राहकों को सर्वोत्तम सेवा और उत्पाद प्रदान करें, जिससे उनकी ऊर्जा जरूरतें पूरी हो सकें और वे भी आधुनिक जीवन के सभी लाभ उठा सकें।`}
             {english &&
-              `At Ray, we are driven by the vision of transforming rural India into
+              `At Seon, we are driven by the vision of transforming rural India into
             an energy-independent nation through our unwavering commitment to
             providing exceptional service and products. We strive to empower our
             customers with the means to meet their energy needs fully, enabling
@@ -181,7 +181,7 @@ function HeroAbout() {
             {!english &&
               "स्योन के साथ, हम एक उज्जवल और स्थायी भविष्य की ओर कदम बढ़ा रहे हैं, जहां हर गांव ऊर्जा आत्मनिर्भर हो और स्वच्छ ऊर्जा का लाभ उठा सके। 🌟🌿"}
             {english &&
-              `With Ray, we embark on a journey towards a brighter and sustainable
+              `With Seon, we embark on a journey towards a brighter and sustainable
             future, where every village stands self-sufficient in energy,
             harnessing the power of clean energy sources.`}
           </div>
