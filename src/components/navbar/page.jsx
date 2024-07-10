@@ -41,26 +41,26 @@ const Navbar = () => {
       <div className={styles.leftside}>
         <div className={styles.item1}>
           <Link className={styles.lin} href="/">
-            <span className={styles.section}>
+            <span className={english? styles.section : styles.hinsection}>
               {!english && `होम`}
               {english && `HOME`}
             </span>
           </Link>
           <Link className={styles.lin} href="/about">
-            <span className={styles.section}>
+          <span className={english? styles.section : styles.hinsection}>
               {!english && `विषय`}
               {english && `ABOUT`}
             </span>
           </Link>
 
           <Link className={styles.lin} href="/contact">
-            <span className={styles.section}>
+          <span className={english? styles.section : styles.hinsection}>
               {!english && `संपर्क`}
               {english && `CONTACT`}
             </span>
           </Link>
           <Link className={styles.lin} href="/#portfolio">
-            <span className={styles.section}>
+          <span className={english? styles.section : styles.hinsection}>
               {!english && `पोर्टफोलियो`}
               {english && `PORTFOLIO`}
             </span>

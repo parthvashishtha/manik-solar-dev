@@ -1,15 +1,52 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import stars from "../../../public/assets/stars.png";
 import Image from "next/image";
 import styles from "./page.module.css";
+import axios from "axios";
 
 const Footer = () => {
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    axios({
+      method: "post",
+      url: "/api/data/newsletter",
+      params: {},
+      data: formData,
+    })
+      .then(function (response) {
+        setFormData({
+          email: "",
+        });
+        alert("Your message/query has been submitted successfully.");
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+      .finally(function () {
+        setLoading(false);
+      });
+  };
   return (
     <div className={styles.container}>
       <img src="/assets/footbg.png" alt="img" className={styles.footbg} />
       <div className={styles.row1}>
         <div className={styles.col1}>
-          <div className={styles.head1}>Rays</div>
+          <div className={styles.head1}>Seon</div>
           <div className={styles.desc2}>Solar & Renewable Energy</div>
           <div className={styles.desc1}>
             At Mentary, we believe in the power of renewable energy to create a
@@ -39,12 +76,19 @@ const Footer = () => {
             tips, and trends in the industry
           </div>
           <div className={styles.newsInput}>
-            <input
-              type="email"
-              placeholder="Your Email"
-              className={styles.inp}
-            />
-            <button className={styles.emailBtn}>→</button>
+            <form onSubmit={handleSubmit}>
+              <input
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                type="email"
+                placeholder="Your Email"
+                className={styles.inp}
+              />
+              <button className={styles.emailBtn}>→</button>
+            </form>
           </div>
         </div>
       </div>
@@ -57,12 +101,19 @@ const Footer = () => {
             tips, and trends in the industry
           </div>
           <div className={styles.newsInput}>
-            <input
-              type="email"
-              placeholder="Your Email"
-              className={styles.inp}
-            />
-            <button className={styles.emailBtn}>→</button>
+            <form onSubmit={handleSubmit}>
+              <input
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                type="email"
+                placeholder="Your Email"
+                className={styles.inp}
+              />
+              <button className={styles.emailBtn}>→</button>
+            </form>
           </div>
         </center>
       </div>

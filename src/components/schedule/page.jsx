@@ -15,8 +15,48 @@ function Schedule() {
     city: "",
   });
 
+  const [errors, setErrors] = useState({
+    contact: "",
+    pin: "",
+  });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    // Validation for contact and pin
+    if (name === "contact") {
+      if (!/^\d{10,13}$/.test(value)) {
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          contact: english
+            ? "Please enter a valid phone number."
+            : "कृपया एक वैध फोन नंबर दर्ज करें।",
+        }));
+      } else {
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          contact: "",
+        }));
+      }
+    }
+
+    if (name === "pin") {
+      if (!/^\d{6}$/.test(value)) {
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          pin: english
+            ? "Pincode must be 6 digits"
+            : "पिनकोड 6 अंकों का होना चाहिए",
+        }));
+        console.log(errors);
+      } else {
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          pin: "",
+        }));
+      }
+    }
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -25,11 +65,32 @@ function Schedule() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Final validation before submitting
+    if (!/^\d{10,13}$/.test(formData.contact)) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        contact: english
+          ? "Please enter a valid phone number."
+          : "कृपया एक वैध फोन नंबर दर्ज करें।",
+      }));
+      return;
+    }
+
+    if (!/^\d{6}$/.test(formData.pin)) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        pin: english
+          ? "Pincode must be 6 digits"
+          : "पिनकोड 6 अंकों का होना चाहिए",
+      }));
+      return;
+    }
+
     setLoading(true);
     axios({
       method: "post",
       url: "/api/data/form",
-      params: {},
       data: formData,
     })
       .then(function (response) {
@@ -90,6 +151,11 @@ function Schedule() {
               placeholder={english ? "Enter Phone No." : `फोन नंबर`}
               required
             />
+            {errors.contact && (
+              <div className={styles.errorMessage}>
+                {errors.contact}
+              </div>
+            )}
             <div className={styles.label}>
               {!english && `ईमेल पता (वैकल्पिक)`}
               {english && `Email Address (Optional)`}
@@ -120,6 +186,11 @@ function Schedule() {
                   placeholder={english ? "Enter Pincode" : `पिनकोड`}
                   required
                 />
+                {errors.pin && (
+                  <div className={styles.errorMessage}>
+                    {errors.pin}
+                  </div>
+                )}
               </div>
               <div className={styles.city}>
                 <div className={styles.label}>
@@ -281,7 +352,7 @@ function Schedule() {
               `सोलर पैनल से आपके बिजली बिल में उल्लेखनीय कमी आएगी, जिससे आप हर महीने पैसे बचा सकते हैं।`}
             {english &&
               `Invest in solar energy today and enjoy long-term savings! By choosing
-            Rays Solar Panel Company`}
+            Seon Solar Panel Company`}
             💸📉
           </div>
         </div>
@@ -358,7 +429,7 @@ function Schedule() {
         {!english &&
           `स्योन में, हम विभिन्न क्षेत्रों में सोलर पैनल इंस्टॉलेशन के सफल प्रोजेक्ट्स की एक विस्तृत श्रृंखला पर गर्व करते हैं। हमारे पोर्टफोलियो में शामिल हैं`}
         {english &&
-          `At Rays, we are proud of a wide range of successful solar panel
+          `At Seon, we are proud of a wide range of successful solar panel
         installation projects in various sectors. Our portfolio includes:`}
       </div>
 
