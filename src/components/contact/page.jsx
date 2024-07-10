@@ -9,7 +9,7 @@ function ContactItem() {
     <div className={styles.box1}>
       <div className={styles.head1}>Contact Us! 📞ें</div>
       <div className={styles.desc1}>
-        At Rays Rooftop, Our experts are always ready to assist you! If you
+        At Seon, Our experts are always ready to assist you! If you
         have any questions or would like more information about our solar
         panel services, please contact us.
       </div>

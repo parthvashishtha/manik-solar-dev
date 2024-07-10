@@ -136,9 +136,9 @@ function Questions() {
                 <>
                   उत्तर: आवश्यक जगह आपके द्वारा चुने गए सोलर सिस्टम के आकार पर
                   निर्भर करती है। सामान्य दिशानिर्देश निम्नलिखित हैं: <br />
-                  1 KW सिस्टम: लगभग 100 वर्ग फुट जगह चाहिए। <br />
-                  2 KW सिस्टम: लगभग 200 वर्ग फुट जगह चाहिए। <br />3 KW सिस्टम:
-                  लगभग 300 वर्ग फुट जगह चाहिए।
+                  1 KW सिस्टम: लगभग 50 वर्ग फुट जगह चाहिए। <br />
+                  2 KW सिस्टम: लगभग 100 वर्ग फुट जगह चाहिए। <br />3 KW सिस्टम:
+                  लगभग 150 वर्ग फुट जगह चाहिए।
                 </>
               )}
               {english && (
@@ -146,10 +146,10 @@ function Questions() {
                   Answer: The space required depends on the size of the solar
                   system you choose. Here are the general guidelines:
                   <br />
-                  1 KW System: Requires approximately 100 square feet of space.
+                  1 KW System: Requires approximately 50 square feet of space.
                   <br />
-                  2 KW System: Requires approximately 200 square feet of space.
-                  <br />3 KW System: Requires approximately 300 square feet of
+                  2 KW System: Requires approximately 100 square feet of space.
+                  <br />3 KW System: Requires approximately 150 square feet of
                   space.
                 </>
               )}

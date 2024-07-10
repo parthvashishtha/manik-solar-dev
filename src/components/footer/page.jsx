@@ -26,10 +26,11 @@ const Footer = () => {
         <div className={styles.col1}>
           <div className={styles.head2}>Contact Info</div>
           <div className={styles.desc3}>
-            Address: 1234 Main St. Anytown, USA 12345
+            4th Floor Sheel Mohar Plaza, Yudhister Marg, C Scheme, Jaipur,
+            Rajasthan 302001
           </div>
-          <div className={styles.desc3}>Phone: +1 (333) 000-0000</div>
-          <div className={styles.desc3}>Email: hi@mentary.com</div>
+          <div className={styles.desc3}>Phone: +918069859743</div>
+          <div className={styles.desc3}>Email: support@raysresidential.in</div>
         </div>
         <div className={styles.col1}>
           <div className={styles.head2}>Newsletter</div>
@@ -48,6 +49,24 @@ const Footer = () => {
         </div>
       </div>
 
+      <div className={styles.mnews}>
+        <center>
+          <div className={styles.head2}>Newsletter</div>
+          <div className={styles.desc3}>
+            Subscribe to our newsletter to stay up-to-date with the latest news,
+            tips, and trends in the industry
+          </div>
+          <div className={styles.newsInput}>
+            <input
+              type="email"
+              placeholder="Your Email"
+              className={styles.inp}
+            />
+            <button className={styles.emailBtn}>→</button>
+          </div>
+        </center>
+      </div>
+
       <div className={styles.location}>Locations</div>
 
       <div className={styles.cities}>
@@ -59,8 +78,8 @@ const Footer = () => {
         <u> Solar in Gwalior</u> •<u> Solar in Indore</u> •
         <u> Solar in Jabalpur</u> • Maharashtra • <u>Solar in Aurangabad</u> •
         <u> Solar in Jalgaon</u> •<u> Solar in Mumbai</u> •
-        <u> Solar in Nagpur</u> •<u> Solar in Nashik</u> •<u> Solar in Pune</u>
-        •<u> Solar in Thane</u> • Rajasthan • <u>Solar in Ajmer</u> •
+        <u> Solar in Nagpur</u> •<u> Solar in Nashik</u> •<u> Solar in Pune</u>•
+        <u> Solar in Thane</u> • Rajasthan • <u>Solar in Ajmer</u> •
         <u> Solar in Jaipur</u> • Telangana • <u>Solar in Hyderabad</u> •
         <u> Solar in Rangareddy</u> •<u> Solar in Sangareddy</u> •
         <u> Solar in Trimulgherry</u> •<u> Solar in Warangal</u> • Uttar Pradesh
