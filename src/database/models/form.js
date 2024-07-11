@@ -22,6 +22,10 @@ const FormSchema = new mongoose.Schema(
       type: String,
       required: [true, "Enter your city"],
     },
+    comment: {
+      type: String,
+      default: "Unchecked"
+  },
   },
   { timestamps: true }
 );

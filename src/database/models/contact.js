@@ -18,6 +18,10 @@ const ContactSchema = new mongoose.Schema(
       type: String,
       default: "India",
     },
+    comment: {
+      type: String,
+      default: "Unchecked"
+  },
   },
   { timestamps: true }
 );
