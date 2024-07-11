@@ -13,7 +13,7 @@ function Hero() {
       <div className={styles.head1}>
         <img src="./assets/home/lady.png" alt="img" className={styles.lady} />
         {!english && "स्योन में आपका स्वागत है"}
-        {english && " Welcome to Seon!"}
+        {english && " Welcome to Syon!"}
       </div>
       <div className={styles.head2}>
         <p>
