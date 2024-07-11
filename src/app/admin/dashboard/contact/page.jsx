@@ -18,7 +18,7 @@ const customStyles = {
   },
 };
 
-function Form() {
+function Contact() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [unresolvedCount, setUnresolvedCount] = useState(0);
@@ -26,12 +26,15 @@ function Form() {
   const assembleData = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("/api/data/form");
-      setData(res.data.reverse());
+      const res = await axios.get("/api/data/contact");
+      const reversedData = res.data.reverse();
+      setData(reversedData);
 
+      // Count the number of unresolved queries
       const unresolved = res?.data?.filter(
         (item) => item.comment === "Unchecked"
       ).length;
+      console.log(unresolved);
       setUnresolvedCount(unresolved);
     } catch (err) {
       console.log(err);
@@ -60,7 +63,6 @@ function Form() {
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
-    // subtitle.style.color = "#f00";
   }
 
   function closeModal() {
@@ -98,7 +100,7 @@ function Form() {
   const handleSubmit = async (e, id) => {
     try {
       e.preventDefault();
-      const res = await axios.put("/api/data/form/single", { id, comment });
+      await axios.put("/api/data/contact/single", { id, comment });
       closeModal();
       setExpandedUser(null);
       await assembleData();
@@ -112,7 +114,7 @@ function Form() {
   const handleDelete = async (id) => {
     try {
       if (window.confirm("Are you sure you want to delete this query?")) {
-        const res = await axios.delete("/api/data/form/single", {
+        await axios.delete("/api/data/contact/single", {
           data: { id },
         });
         setExpandedUser(null);
@@ -130,8 +132,8 @@ function Form() {
   return (
     <div className="usersList">
       <div className="queryBox">
-        <div className="query">Total Query: {data.length} </div>
-        <div className="query">Unresolved Query: {unresolvedCount} </div>
+        <div className="query">Total Query: {data.length}</div>
+        <div className="query">Unresolved Query: {unresolvedCount}</div>
       </div>
       <div className="box2">
         <table>
@@ -142,7 +144,7 @@ function Form() {
               <th>Email Id</th>
               <th>Contact No</th>
               <th>Date</th>
-              <th>City</th>
+              <th>How did You find us?</th>
               <th>Comment</th>
               <th>Action</th>
             </tr>
@@ -163,7 +165,7 @@ function Form() {
                     })}
                     , {new Date(data?.createdAt).toLocaleTimeString()}
                   </td>
-                  <td>{data.city}</td>
+                  <td>{data.source}</td>
                   <td>{data.comment}</td>
                   <td>
                     <Link href="" onClick={() => toggleUserDetails(index + 1)}>
@@ -204,11 +206,11 @@ function Form() {
                         <div className="col2">
                           <div>
                             <b>PIN Code: </b>
-                            {data?.pin}
+                            N/A
                           </div>
                           <div>
                             <b>City: </b>
-                            {data?.city}
+                            N/A
                           </div>
                           <div
                             onClick={() => handleDelete(data._id)}
@@ -304,4 +306,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default Contact;

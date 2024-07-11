@@ -1,7 +1,7 @@
 .usersList{
     background-color: #FFF;
     position: relative;
-    color: black;
+    color: #000;
 
     .queryBox{
         display: flex;
@@ -13,13 +13,13 @@
             padding: 6px 10px 2px 10px;
           }
     }
-
+    
     .box1{
 
     }
 
     .box2{
-        margin-top: 0.5%;
+        margin-top: 0.2%;
         margin-left: 30px;
         background-color: #fff;
         padding: 10px;
@@ -89,3 +89,4 @@
         }
     }
 }
+

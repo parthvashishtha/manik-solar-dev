@@ -6,8 +6,7 @@ import TableNav from "../../../../components/tableNav/TableNav";
 import axios from "axios";
 import Loader from "@/components/loader/Loader";
 
-function page() {
-
+function Page() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
@@ -16,15 +15,11 @@ function page() {
     setLoading(true);
     try {
       const res = await axios.get("/api/data/newsletter");
-      // console.log(res.data);
-      setData(res.data);
-
+      setData(res.data.reverse());
     } catch (err) {
       console.log(err);
-
     } finally {
       setLoading(false);
-
     }
   };
 
@@ -35,19 +30,16 @@ function page() {
       } catch (err) {
         console.log(err);
       }
-    }
+    };
 
     assembleDataWrapper();
-
   }, []);
 
   if (loading) {
-    return (
-      <Loader />
-    );
+    return <Loader />;
   }
 
-  const itemsPerPage = 10;
+  const itemsPerPage = 20;
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
   const onPageChange = (newPage) => {
@@ -59,19 +51,23 @@ function page() {
   const displayedData = data.slice(startIndex, endIndex);
 
   const handleDelete = async (id) => {
-    try {
-      const res = await axios.delete("/api/data/newsletter/single", { data: { id } });
-      await assembleData();
-    } catch (err) {
-      console.log(err);
+    if (window.confirm("Are you sure you want to delete this query?")) {
+      try {
+        const res = await axios.delete("/api/data/newsletter/single", {
+          data: { id },
+        });
+        await assembleData();
+      } catch (err) {
+        console.log(err);
+      }
     }
-  }
+  };
 
   return (
     <div className="usersList">
-       <div className="queryBox">
-      <div className="query">Total Query: {} </div>
-      <div className="query">Unresolved Query:</div>
+      <div className="queryBox">
+        <div className="query">Total Query: {data.length} </div>
+        <div className="query">Unresolved Query:</div>
       </div>
       <div className="box2">
         <table>
@@ -90,15 +86,19 @@ function page() {
                   <td>{startIndex + index + 1}</td>
                   <td>{data.email}</td>
                   <td>
-                    {new Date(data?.createdAt).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' })},
-                    {" "}{new Date(data?.createdAt).toLocaleTimeString()}
+                    {new Date(data?.createdAt).toLocaleDateString(undefined, {
+                      day: "numeric",
+                      month: "short",
+                      year: "numeric",
+                    })}
+                    , {new Date(data?.createdAt).toLocaleTimeString()}
                   </td>
                   <td>
                     <div
                       style={{
                         width: "5rem",
                         backgroundColor: "red",
-                        color: "white",
+                        color: "black",
                         padding: "4px 10px",
                         borderRadius: "8px",
                         marginLeft: "8px",
@@ -129,4 +129,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
