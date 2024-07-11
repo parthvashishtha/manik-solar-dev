@@ -152,9 +152,7 @@ function Schedule() {
               required
             />
             {errors.contact && (
-              <div className={styles.errorMessage}>
-                {errors.contact}
-              </div>
+              <div className={styles.errorMessage}>{errors.contact}</div>
             )}
             <div className={styles.label}>
               {!english && `ईमेल पता (वैकल्पिक)`}
@@ -168,7 +166,6 @@ function Schedule() {
               value={formData.email}
               onChange={handleChange}
               placeholder={english ? "Enter Email Address" : `ईमेल पता`}
-              required
             />
             <div className={styles.pincity}>
               <div className={styles.pin}>
@@ -187,9 +184,7 @@ function Schedule() {
                   required
                 />
                 {errors.pin && (
-                  <div className={styles.errorMessage}>
-                    {errors.pin}
-                  </div>
+                  <div className={styles.errorMessage}>{errors.pin}</div>
                 )}
               </div>
               <div className={styles.city}>
@@ -323,7 +318,7 @@ function Schedule() {
       />
 
       <div className={styles.head}>
-        {!english && `हमारे साथ जुड़ने के फायद`}
+        {!english && `हमारे साथ जुड़ने के फ़ायदे`}
         {english && `Benefits with us!`}
         👥✨
       </div>
@@ -352,7 +347,7 @@ function Schedule() {
               `सोलर पैनल से आपके बिजली बिल में उल्लेखनीय कमी आएगी, जिससे आप हर महीने पैसे बचा सकते हैं।`}
             {english &&
               `Invest in solar energy today and enjoy long-term savings! By choosing
-            Seon Solar Panel Company`}
+            Syon Solar Panel Company`}
             💸📉
           </div>
         </div>
@@ -429,7 +424,7 @@ function Schedule() {
         {!english &&
           `स्योन में, हम विभिन्न क्षेत्रों में सोलर पैनल इंस्टॉलेशन के सफल प्रोजेक्ट्स की एक विस्तृत श्रृंखला पर गर्व करते हैं। हमारे पोर्टफोलियो में शामिल हैं`}
         {english &&
-          `At Seon, we are proud of a wide range of successful solar panel
+          `At Syon, we are proud of a wide range of successful solar panel
         installation projects in various sectors. Our portfolio includes:`}
       </div>
 

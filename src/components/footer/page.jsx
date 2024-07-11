@@ -46,7 +46,7 @@ const Footer = () => {
       <img src="/assets/footbg.png" alt="img" className={styles.footbg} />
       <div className={styles.row1}>
         <div className={styles.col1}>
-          <div className={styles.head1}>Seon</div>
+          <div className={styles.head1}>Syon</div>
           <div className={styles.desc2}>Solar & Renewable Energy</div>
           <div className={styles.desc1}>
             At Mentary, we believe in the power of renewable energy to create a

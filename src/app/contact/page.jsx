@@ -61,7 +61,7 @@ function Contact() {
           {!english &&
             `हमारे विशेषज्ञ आपकी सहायता के लिए हमेशा तैयार हैं! यदि आपके पास कोई प्रश्न है या आप हमारे सोलर पैनल सेवाओं के बारे में अधिक जानकारी चाहते हैं, तो कृपया हमसे संपर्क करें:`}
           {english &&
-            `At Seon, Our experts are always ready to assist you! If you
+            `At Syon, Our experts are always ready to assist you! If you
           have any questions or would like more information about our solar
           panel services, please contact us.`}
         </div>
